@@ -47,8 +47,6 @@ def main():
             png_process(image, x, y)
         elif image[-3:] == "gif":
             gif_process(image, x, y)
-        else:
-            print("something wrong in filetype")
             
     print("exit")
             
