@@ -33,7 +33,7 @@
 Поддерживаемые операционные системы: **Windows**
 
 > [!WARNING]
-> Для работы скрипта, вам потребуется **Python 3.10.x** и библиотека [**Pillow**](https://pypi.org/project/pillow/)
+> Для работы скрипта, требуется [**Python 3**](https://www.python.org/) и библиотека [**Pillow**](https://pypi.org/project/pillow/)
 
 Подробная инструкция:
 
