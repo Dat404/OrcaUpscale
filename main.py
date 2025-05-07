@@ -12,7 +12,7 @@ import datetime
 def png_process(image, x, y, i, o):
 
     opened_image = Image.open(f"{i}\\{image}")
-    scaled_image = opened_image.resize((x, y), Image.NEAREST)
+    scaled_image = opened_image.resize((x, y), Image.NEAREST)  
     scaled_image.save(f"{o}\\{image[:-4]}_{datetime.datetime.now().microsecond}.png")
 
 def gif_process(image, x, y, i, o):
@@ -34,15 +34,30 @@ def main():
     path_to_images = "images"
     path_to_processed_images = "processed"
 
-    hello = """
+    hello = r"""
         PLEASE, READ README.md !!!
         
         enter x, y (width, height)
         example: > 64 64
+
+        enter I to change INPUT location
+        enter O to change OUTPUT location
+
+        DO NOT TOUCH IF YOU WANNA SAFE I - images O - processed by default.
+
+        example: > I D:\img 
+        example: > O D:img\upscaled_img
+
+        when configuration was complete, enter C
+
+        example: > C
+
+
     """
+
     while True:
 
-        user_input = input(hello).split()
+        user_input = input(f"{hello} > ").split()
 
         if user_input[0] == "C":
             break
