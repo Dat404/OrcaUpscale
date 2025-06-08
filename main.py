@@ -59,7 +59,7 @@ def main():
 
         user_input = input(f"{hello} > ").split()
 
-        if user_input[0] == "C":
+        if user_input[0].upper() == "C":
             break
 
         if user_input[0] in ["I", "O"]:
