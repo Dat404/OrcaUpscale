@@ -35,7 +35,7 @@ def main():
     path_to_processed_images = "processed"
 
     hello = r"""
-        PLEASE, READ README.md !!!
+        PLEASE, READ README.md !
         
         enter x, y (width, height)
         example: > 64 64
